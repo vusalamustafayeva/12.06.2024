@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(12, 110, 51);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 2px;
+            background-color: rgb(12, 110, 51);
+            padding: 3px;
+            width: 500px;
+            height: 300px;
+        }
+        .container div {
+            background-color: rgb(14, 233, 14);
+            width: 100%;
+            height: 100%;
+        }
+
+        .container div:hover{
+            background-color: rgb(240, 9, 9);
+            opacity: 1;
+        }
+        .text{
+            opacity: -1;
+            transition: opacity o.3s ease;
+            position:relative;
+            text-align: center;
+        }
+        .empty {
+            background-color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div class="empty, text">YAPARSIN</div>
+        <div class="empty, text">MÜKEMMELSIN</div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div class="empty, text">GÜCLÜSÜN</div>
+        <div class="empty, text">COK GÜZELSIN</div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div class="empty, text">SEN DEVELOPERSIN</div>
+        <div class="empty, text">HARIKASIN</div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div class="empty, text">ISTE BU</div>
+        <div class="empty, text">WOW :)</div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div class="empty, text">CLASS</div>
+        <div class="empty, text">ISTE BU;)</div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
